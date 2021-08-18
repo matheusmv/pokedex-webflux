@@ -21,6 +21,6 @@ public class Pokemon {
     private String id;
     private String name;
     private String category;
-    private String skill;
+    private String abilities;
     private Double weight;
 }
