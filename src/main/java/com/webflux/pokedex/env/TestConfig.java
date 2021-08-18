@@ -1,16 +1,16 @@
 package com.webflux.pokedex.env;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
 @Profile("test")
+@AllArgsConstructor
 public class TestConfig {
 
-    @Autowired
-    private TestService testService;
+    private final TestService testService;
 
     @Bean
     public void instantiateDataBase() {
